@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/contentKost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_home_work_24"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/item_namakost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Nama Kost"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/item_jarakkost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Jarak Kost"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/item_hargakost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Harga Kost"
+                android:textColor="@color/btn_biru"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/item_delete"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
